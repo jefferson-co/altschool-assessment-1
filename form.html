@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Month 1 Assignment form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="top">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="form.html" aria-current="page">Sign Up</a></li>
+            </ul>
+        </nav>
+        <h1>Sign Up</h1>
+        <p>Create an account to get started on your learning journey</p>
+    </header>
+    <main>
+        <p><strong>Important:</strong> Your name will appear on your certificate exactly as entered</p>
+        <form action="/signup" method="post">
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="john.doe@example.com"
+                       autocomplete="email" required>
+            </p>
+            <p>
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name" name="firstname"
+                       placeholder="Jeff" required>
+            </p>
+            <p>
+                <label for="last-name">Last Name</label><br>
+                <input type="text" id="last-name" name="lastname"
+                       placeholder="Doe" required>
+            </p>
+            <p>
+                <label for="number">Phone Number</label><br>
+                <input type="tel" id="number" name="number"
+                       placeholder="+234 123 456 7890" required>
+            </p>
+            <p>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"
+                       placeholder="********" required minlength="4">
+            </p>
+            <p>
+                By clicking Create account, I agree to
+                <a href="https://altschoolafrica.com/terms-and-conditions" target="_blank" rel="noopener noreferrer">Terms of Use</a>
+                and acknowledge that I have read the
+                <a href="https://altschoolafrica.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+            </p>
+
+            <button type="submit">Create account</button>
+        </form>
+        <p>OR</p>
+
+        <p><button type="button">Login with Google</button></p>
+    </main>
+
+    <footer>
+        <address>Lagos, Nigeria</address>
+        <p><a href="#top">Back to Top</a></p>
+        <p><small>&copy; 2026 Jefferson Nnaji</small></p>
+    </footer>
+</body>
+</html>
